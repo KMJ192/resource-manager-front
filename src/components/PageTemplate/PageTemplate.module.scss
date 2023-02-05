@@ -1,14 +1,19 @@
+@import '@styles/color.scss';
+
 $nav-width: 128px;
-$header-height: 128px;
+$header-height: 72px;
 $footer-height: 72px;
 
 .template {
   display: flex;
   width: 100vw;
   height: 100vh;
-  .main {
+  .main-article {
     display: grid;
     grid-template-rows: $header-height 1fr $footer-height;
     width: calc(100vw - $nav-width);
+    .contents {
+      background-color: $contents-background;
+    }
   }
 }

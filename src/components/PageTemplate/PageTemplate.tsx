@@ -16,7 +16,7 @@ function PageTemplate({ children }: Props) {
   return (
     <article className={cx('template')}>
       <SideNav />
-      <article className={cx('main')}>
+      <article className={cx('main-article')}>
         <Header />
         <main className={cx('contents')}>{children}</main>
         <Footer />
