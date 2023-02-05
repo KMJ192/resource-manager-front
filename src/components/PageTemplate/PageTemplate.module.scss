@@ -1,0 +1,14 @@
+$nav-width: 128px;
+$header-height: 128px;
+$footer-height: 72px;
+
+.template {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  .main {
+    display: grid;
+    grid-template-rows: $header-height 1fr $footer-height;
+    width: calc(100vw - $nav-width);
+  }
+}
