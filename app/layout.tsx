@@ -1,8 +1,5 @@
 import React from 'react';
-import PageTemplate from '@src/components/PageTemplate/PageTemplate';
-
-// import classNames from 'classnames/bind';
-// import style from
+import Root from './Root';
 
 import '@styles/globals.css';
 
@@ -17,7 +14,7 @@ export default function RootLayout({
         <title>test</title>
       </head>
       <body>
-        <PageTemplate>{children}</PageTemplate>
+        <Root>{children}</Root>
       </body>
     </html>
   );

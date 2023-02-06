@@ -1,8 +1,8 @@
 @import '@styles/color.scss';
 
-$nav-width: 128px;
+$nav-width: 172px;
 $header-height: 72px;
-$footer-height: 72px;
+$footer-height: 48px;
 
 .template {
   display: flex;
@@ -11,7 +11,7 @@ $footer-height: 72px;
   .main-article {
     display: grid;
     grid-template-rows: $header-height 1fr $footer-height;
-    width: calc(100vw - $nav-width);
+    width: 100vw;
     .contents {
       background-color: $contents-background;
     }
