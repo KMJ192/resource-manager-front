@@ -29,10 +29,24 @@
         display: flex;
         justify-content: space-between;
         transition: all 0.5 ease;
-        .thing {
+        .arrow {
           cursor: pointer;
           transition: transform 0.5 ease;
-          // transform: rotate(-90deg);
+          transform: rotate(-90deg) translate(-4px, -4px);
+          position: relative;
+          width: 8px;
+          height: 8px;
+          &::after {
+            position: absolute;
+            left: 0; 
+            top: 0; 
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid #000;
+            border-right: 2px solid #000;
+            transform: rotate(225deg);
+          }
         }
         &:hover {
           background-color: $mono3;

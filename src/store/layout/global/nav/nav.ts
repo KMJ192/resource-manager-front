@@ -3,7 +3,7 @@ import { atom } from 'recoil';
 export type NavDrawerModel = {
   drawer: Array<{
     name: string;
-    count: number;
+    count: number;    
   }>;
 };
 
